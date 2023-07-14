@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Shopping Cart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+
+  <!-- Carrito de compras -->
+  <article class="cart">
+    <h3 class="cart__title">Cart</h3>
+
+    <div class="cart__content">
+
+    </div>
+  </article>
+
+  <!-- Menú de navegación -->
+  <header class="hero container">
+    <nav class="nav">
+      <input type="checkbox" id="menu" class="nav__input">
+      <label for="menu" class="nav__label"></label>
+      <img src="./images/logo.svg" class="nav__logo">
+
+      <div class="nav__content">
+        <ul class="nav__menu">
+
+          <li class="nav__list">
+            <a href="#" class="nav__link">Collections</a>
+          </li>
+
+          <li class="nav__list">
+            <a href="#" class="nav__link">Men</a>
+          </li>
+
+          <li class="nav__list">
+            <a href="#" class="nav__link">Women</a>
+          </li>
+
+          <li class="nav__list">
+            <a href="#" class="nav__link">About</a>
+          </li>
+
+          <li class="nav__list">
+            <a href="#" class="nav__link">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <img src="./images/icon-cart-header.svg" class="nav__cart">
+
+      <img src="./images/image-avatar.png" class="nav__avatar">
+
+      
+
+      
+    </nav>
+  </header>
+
+  <!-- Slideshow -->
+  <section class="slideshow">
+      
+    <div class="slideshow__content">
+      <figure class="slideshow__figure">
+
+        <button class="slideshow__close">
+          <img src="./images/icon-close.svg" class="slideshow__icon">
+        </button>
+
+        <button class="slideshow__prev" data-increment="-1">
+          <img src="./images/icon-previous.svg" class="slideshow__icon">
+        </button>
+
+        <button class="slideshow__next" data-increment="1">
+          <img src="./images/icon-next.svg" class="slideshow__icon">
+        </button>
+
+        <img src="./images/image-product-1-full.jpg" class="slideshow__full">        
+  
+      </figure>
+
+      <article class="slideshow__images">
+
+        <figure class="slideshow__figures slideshow__figures--active" data-id="1">
+          <img src="./images/image-product-1.jpg" class="slideshow__thumb" data-image="./images/image-product-1-full.jpg">
+        </figure>
+
+        <figure class="slideshow__figures" data-id="2">
+          <img src="./images/image-product-2.jpg" class="slideshow__thumb" data-image="./images/image-product-2-full.jpg">
+        </figure>
+
+        <figure class="slideshow__figures" data-id="3">
+          <img src="./images/image-product-3.jpg" class="slideshow__thumb" data-image="./images/image-product-3-full.jpg">
+        </figure>
+
+        <figure class="slideshow__figures" data-id="4">
+          <img src="./images/image-product-4.jpg" class="slideshow__thumb" data-image="./images/image-product-4-full.jpg">
+        </figure>
+
+      </article>
+    </div>
+    
+  </section>
+  
+  <!-- Sección Slider & Carrito -->
+  <main class="main">
+
+    <section class="slider">
+      
+      <figure class="slider__image">
+
+        <button class="slider__prev" data-increment="-1">
+          <img src="./images/icon-previous.svg" class="slider__icon">
+        </button>
+
+        <button class="slider__next" data-increment="1">
+          <img src="./images/icon-next.svg" class="slider__icon">
+        </button>
+
+        <img src="./images/image-product-1-full.jpg" class="slider__full">        
+  
+      </figure>
+
+      <article class="slider__content">
+
+        <figure class="slider__figures slider__figures--active" data-id="1">
+          <img src="./images/image-product-1.jpg" class="slider__thumb" data-image="./images/image-product-1-full.jpg">
+        </figure>
+
+        <figure class="slider__figures" data-id="2">
+          <img src="./images/image-product-2.jpg" class="slider__thumb" data-image="./images/image-product-2-full.jpg">
+        </figure>
+
+        <figure class="slider__figures" data-id="3">
+          <img src="./images/image-product-3.jpg" class="slider__thumb" data-image="./images/image-product-3-full.jpg">
+        </figure>
+
+        <figure class="slider__figures" data-id="4">
+          <img src="./images/image-product-4.jpg" class="slider__thumb" data-image="./images/image-product-4-full.jpg">
+        </figure>
+
+      </article>
+    </section>
+
+
+    <section class="container product">
+      <p class="product__company"> Sneaker Company</p>
+      <h1 class="product__name"> Fall Limited Edition Sneakers</h1>
+      <p class="product__copy">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+      <p class="product__price">
+        $
+        <span class="product__finally">125.00</span>
+        <span class="product__discount"> 50%</span>
+        <span class="product__total">$250.00</span>
+      </p>
+
+      <div class="product__counter">
+        <button class="product__decrement">-</button>
+        <span class="product__shopping">0</span>
+        <button class="product__increment">+</button>
+      </div>
+
+
+      <button class="product__add">
+        <img src="./images/icon-cart.svg" class="product__icon">
+        <span class="product__cart">Add to cart</span>
+      </button>
+
+
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
